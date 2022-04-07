@@ -1,0 +1,4 @@
+{
+    "name": "endpoints",
+    "main": "./index.js"
+}

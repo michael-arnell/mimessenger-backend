@@ -4,6 +4,8 @@ const secret = "asdf;lkjasdf;lkj";
 
 const addAuthToken = function (req, res) {
     const { email, password } = req.body;
+    console.log(req.body)
+    // res.setHeader("Access-Control-Allow-Origin",  "http://localhost:3000");
     User.findOne({ email }, function (err, user) {
         if (err) {
             console.error(err);

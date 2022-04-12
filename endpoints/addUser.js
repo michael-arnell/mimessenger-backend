@@ -1,6 +1,7 @@
 const User = require("../models/userModel");
 
 const addUser = function (req, res) {
+    console.log(req);
     let user = User({
         email: req.body.email,
         password: req.body.password,
